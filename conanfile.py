@@ -1,4 +1,4 @@
-sfrom conans import ConanFile, tools, os
+from conans import ConanFile, tools, os
 
 class BoostCoroutineConan(ConanFile):
     name = "Boost.Coroutine"
