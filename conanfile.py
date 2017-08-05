@@ -1,13 +1,15 @@
-from conans import ConanFile, tools, os
+sfrom conans import ConanFile, tools, os
 
 class BoostCoroutineConan(ConanFile):
     name = "Boost.Coroutine"
     version = "1.64.0"
-    generators = "txt"
+    generators = "txt" 
+    settings = "os", "arch", "compiler", "build_type"
     url = "https://github.com/boostorg/coroutine"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_name = "coroutine"
+    build_requires = "Boost.Build/1.64.0@bincrafters/testing" 
     requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
                       "Boost.Config/1.64.0@bincrafters/testing", \
                       "Boost.Context/1.64.0@bincrafters/testing", \
