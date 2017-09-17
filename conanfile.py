@@ -13,7 +13,7 @@ class BoostCoroutineConan(ConanFile):
     lib_short_names = ["coroutine"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Generator/0.0.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.64.0@bincrafters/testing"
     requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
                       "Boost.Config/1.64.0@bincrafters/testing", \
                       "Boost.Context/1.64.0@bincrafters/testing", \
