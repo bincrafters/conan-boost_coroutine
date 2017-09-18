@@ -13,18 +13,18 @@ class BoostCoroutineConan(ConanFile):
     lib_short_names = ["coroutine"]
     options = {"shared": [True, False]}
     default_options = "shared=False"
-    build_requires = "Boost.Generator/0.0.1@bincrafters/testing"
-    requires =  "Boost.Assert/1.65.1@bincrafters/testing", \
-                      "Boost.Config/1.65.1@bincrafters/testing", \
-                      "Boost.Context/1.65.1@bincrafters/testing", \
-                      "Boost.Core/1.65.1@bincrafters/testing", \
-                      "Boost.Exception/1.65.1@bincrafters/testing", \
-                      "Boost.Move/1.65.1@bincrafters/testing", \
-                      "Boost.Range/1.65.1@bincrafters/testing", \
-                      "Boost.System/1.65.1@bincrafters/testing", \
-                      "Boost.Throw_Exception/1.65.1@bincrafters/testing", \
-                      "Boost.Type_Traits/1.65.1@bincrafters/testing", \
-                      "Boost.Utility/1.65.1@bincrafters/testing"
+    build_requires = "Boost.Generator/1.64.0@bincrafters/testing"
+    requires =  "Boost.Assert/1.64.0@bincrafters/testing", \
+                      "Boost.Config/1.64.0@bincrafters/testing", \
+                      "Boost.Context/1.64.0@bincrafters/testing", \
+                      "Boost.Core/1.64.0@bincrafters/testing", \
+                      "Boost.Exception/1.64.0@bincrafters/testing", \
+                      "Boost.Move/1.64.0@bincrafters/testing", \
+                      "Boost.Range/1.64.0@bincrafters/testing", \
+                      "Boost.System/1.64.0@bincrafters/testing", \
+                      "Boost.Throw_Exception/1.64.0@bincrafters/testing", \
+                      "Boost.Type_Traits/1.64.0@bincrafters/testing", \
+                      "Boost.Utility/1.64.0@bincrafters/testing"
 
                       #assert1 config0 context12 core2 exception5 move3 range7 system3 throw_exception2 type_traits3 utility5
                       
