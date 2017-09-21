@@ -2,6 +2,6 @@
 
 int main()
 {
-	boost::coroutines::coroutine<int>::pull_type;
+	boost::coroutines::stack_unwind;
 }
 
