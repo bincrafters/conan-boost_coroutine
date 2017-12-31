@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostCoroutineConan(ConanFile):
     name = "boost_coroutine"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-coroutine"
+    url = "https://github.com/bincrafters/conan-boost_coroutine"
 
     lib_short_names = ["coroutine"]
     is_header_only = False
