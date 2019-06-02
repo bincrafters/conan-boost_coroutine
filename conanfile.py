@@ -4,26 +4,9 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.69.0@bincrafters/testing")
+base = python_requires("boost_base/2.0.0@bincrafters/testing")
+
 
 class BoostCoroutineConan(base.BoostBaseConan):
     name = "boost_coroutine"
-    version = "1.69.0"
-    url = "https://github.com/bincrafters/conan-boost_coroutine"
-    lib_short_names = ["coroutine"]
-    options = {"shared": [True, False]}
-    default_options = "shared=False"
-    b2_requires = [
-        "boost_assert",
-        "boost_config",
-        "boost_context",
-        "boost_core",
-        "boost_exception",
-        "boost_move",
-        "boost_range",
-        "boost_system",
-        "boost_thread",
-        "boost_throw_exception",
-        "boost_type_traits",
-        "boost_utility"
-    ]
+    version = "1.70.0"
